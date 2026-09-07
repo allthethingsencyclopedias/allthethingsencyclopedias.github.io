@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AllTheThings — offline reference apps</title>
+<meta name="description" content="AllTheThings builds small, offline reference apps. A studio of Miniboss Studios Oy.">
+<style>
+  :root {
+    --green: #17402c;
+    --cream: #f2eadf;
+    --paper: #f7f4f0;
+    --ink: #1c2620;
+    --muted: #5c6b62;
+    --border: #e2ddd4;
+    --link: #1f6d4a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  header { background: var(--green); color: var(--cream); padding: 56px 24px; }
+  .inner { max-width: 720px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .mark { width: 52px; height: 52px; flex: none; }
+  header h1 { margin: 0; font-size: 26px; letter-spacing: -0.3px; }
+  header p { margin: 14px 0 0; font-size: 16px; opacity: 0.9; max-width: 52ch; }
+  main { max-width: 720px; margin: 0 auto; padding: 36px 24px 56px; }
+  h2 { font-size: 18px; margin: 32px 0 12px; }
+  h2:first-child { margin-top: 0; }
+  .app {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: #fff; border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .app .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); margin-top: 7px; flex: none; }
+  .app h3 { margin: 0 0 2px; font-size: 16px; }
+  .app p { margin: 0; color: var(--muted); font-size: 14px; }
+  .tag {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.4px;
+    text-transform: uppercase; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; margin-left: 8px;
+  }
+  a { color: var(--link); }
+  footer {
+    max-width: 720px; margin: 0 auto; padding: 24px 24px 56px;
+    border-top: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #14171a; --ink: #e8eae6; --muted: #9fb0a6; --border: #2a3230; --link: #7fd0a6; }
+    .app { background: #1b1f22; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="brand">
+        <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true">
+          <g fill="none" stroke="#f2eadf" stroke-width="90" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M 300 602 L 512 258 L 724 602"/>
+          </g>
+          <circle cx="512" cy="566" r="53" fill="#f2eadf"/>
+        </svg>
+        <h1>AllTheThings</h1>
+      </div>
+      <p>We build small, focused reference apps that work completely offline — no accounts,
+      no tracking, no clutter. Just the thing you looked up, and a clear way to follow it.</p>
+    </div>
+  </header>
+
+  <main>
+    <h2>Our apps</h2>
+
+    <div class="app">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <h3>AllTheDrinks <span class="tag">Coming soon</span></h3>
+        <p>360 drink recipes — cocktails, sours, highballs, beers, shots, smoothies and
+        mocktails — with measured ingredients and a step-by-step method. Fully offline.
+        <a href="drinks-privacy.html">Privacy policy</a></p>
+      </div>
+    </div>
+
+    <div class="app">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <h3>AllTheBakes <span class="tag">In development</span></h3>
+        <p>Cakes, pastry, bread and savoury bakes, in the same offline, step-by-step format.</p>
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Questions, bug reports or feedback:
+    <a href="mailto:allthethingsencyclopedias@gmail.com">allthethingsencyclopedias@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <p>AllTheThings is a studio of <strong>Miniboss Studios Oy</strong>, Finland.<br>
+    &copy; 2026 Miniboss Studios Oy.</p>
+  </footer>
+</body>
+</html>
